@@ -2,10 +2,13 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import App from './App.vue'
+import MainApp from './MainApp.vue'
+import HeaderApp from './HeaderApp.vue'
 
-const app = createApp(App)
+const mainApp = createApp(MainApp)
+mainApp.use(createPinia())
+mainApp.mount('#main-app')
 
-app.use(createPinia())
-
-app.mount('#app')
+const headerApp = createApp(HeaderApp)
+headerApp.use(createPinia())
+headerApp.mount('#header-app')
