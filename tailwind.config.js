@@ -52,7 +52,13 @@ module.exports = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
-        }
+        },
+        'azulescuro': '#10125A',
+        'azulclaro': '#8A93B9',
+        'douradoescuro': '#978B83',
+        'douradoclaro': '#BAB2AF',
+        'bgdarkmode': '#171717',
+        'textdarkmode' : '#E6E6E6'
       },
       borderRadius: {
         lg: 'var(--radius)',

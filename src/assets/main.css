@@ -75,11 +75,11 @@
     @apply border-border;
   }
   body {
-    @apply font-inter flex h-screen flex-col bg-background text-foreground;
+    @apply font-inter flex h-screen flex-col bg-background text-foreground ;
   }
 
   #header-app {
-    @apply flex h-14 flex-row justify-around bg-red-400 align-middle;
+    @apply bg-red-400;
   }
 
   #main-app {
