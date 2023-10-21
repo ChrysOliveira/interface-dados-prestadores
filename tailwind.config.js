@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['class'],
+  darkMode: 'class',
 
   content: [
     './pages/**/*.{ts,tsx,vue}',
@@ -53,12 +53,12 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
         },
-        'azulescuro': '#10125A',
-        'azulclaro': '#8A93B9',
-        'douradoescuro': '#978B83',
-        'douradoclaro': '#BAB2AF',
-        'bgdarkmode': '#171717',
-        'textdarkmode' : '#E6E6E6'
+        azulescuro: '#10125A',
+        azulclaro: '#8A93B9',
+        douradoescuro: '#978B83',
+        douradoclaro: '#BAB2AF',
+        bgdarkmode: '#171717',
+        textdarkmode: '#E6E6E6'
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -80,12 +80,9 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out'
       },
       fontFamily: {
-        "inter": [
-          "'Inter', sans-serif"
-        ],
+        inter: ["'Inter', sans-serif"]
       }
     }
   },
-  plugins: [require('tailwindcss-animate'), require('flowbite/plugin')],
-
+  plugins: [require('tailwindcss-animate'), require('flowbite/plugin')]
 }

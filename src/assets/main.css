@@ -75,7 +75,7 @@
     @apply border-border;
   }
   body {
-    @apply font-inter flex h-screen flex-col bg-background text-foreground ;
+    @apply flex h-screen flex-col bg-background font-inter text-foreground;
   }
 
   #header-app {

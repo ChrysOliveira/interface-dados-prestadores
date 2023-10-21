@@ -6,11 +6,10 @@
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
 
-
 import MenuSuperior from '@/components/MenuSuperior.vue'
 
 onMounted(() => {
-    initFlowbite();
+  initFlowbite()
 })
 </script>
 
