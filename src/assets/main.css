@@ -75,14 +75,13 @@
     @apply border-border;
   }
   body {
-    @apply flex h-screen flex-col bg-background font-inter text-foreground;
+    @apply flex h-screen flex-col bg-background bg-white font-inter text-black text-foreground dark:bg-bgdarkmode dark:text-textdarkmode;
   }
 
   #header-app {
-    @apply bg-red-400;
   }
 
   #main-app {
-    @apply container h-full bg-blue-400;
+    @apply container h-full;
   }
 }

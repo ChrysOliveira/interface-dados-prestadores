@@ -6,7 +6,7 @@
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
 
-import MenuSuperior from '@/components/MenuSuperior.vue'
+import MenuSuperior from '@/components/menu-superior/MenuSuperior.vue'
 
 onMounted(() => {
   initFlowbite()
