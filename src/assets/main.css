@@ -82,6 +82,6 @@
   }
 
   #main-app {
-    @apply container h-full;
+    @apply container grid h-full w-full  grid-rows-[auto_1fr] gap-2 p-4;
   }
 }

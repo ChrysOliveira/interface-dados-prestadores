@@ -81,7 +81,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ["'Inter', sans-serif"]
-      }
+      },
     }
   },
   plugins: [require('tailwindcss-animate'), require('flowbite/plugin')]
