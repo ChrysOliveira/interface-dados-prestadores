@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import ItemMenuDadosPrestador from '@/components/main-conteudo/ItemMenuDadosPrestador.vue'
+import ItemMenuDadosPrestador from '@/components/main-conteudo/componentes-interativos/ItemMenuDadosPrestador.vue'
 import { ref } from 'vue'
 
 const listaMenuDadosPrestador = ref([

@@ -9,8 +9,8 @@
 </template>
 
 <script setup lang="ts">
-import BarraPesquisaPrestador from '@/components/main-conteudo/BarraPesquisaPrestador.vue'
-import MenuDadosPrestador from '@/components/main-conteudo/MenuDadosPrestador.vue'
+import BarraPesquisaPrestador from '@/components/main-conteudo/componentes-interativos/BarraPesquisaPrestador.vue'
+import MenuDadosPrestador from '@/components/main-conteudo/componentes-interativos/MenuDadosPrestador.vue'
 import BotaoVerde from '@/components/utils/BotaoVerde.vue'
 </script>
 
