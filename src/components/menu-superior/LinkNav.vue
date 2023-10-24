@@ -1,7 +1,8 @@
 <template>
   <li>
     <a
-      href="#"
+      :href="props.href"
+      target="_blank"
       class="flex flex-row items-center justify-between rounded py-2 pl-3 pr-4 hover:bg-transparent hover:text-azulescuro dark:hover:text-azulclaro md:border-0 md:p-0"
       ><slot />
       <svg
@@ -22,6 +23,8 @@
   </li>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps(['href'])
+</script>
 
 <style scoped></style>

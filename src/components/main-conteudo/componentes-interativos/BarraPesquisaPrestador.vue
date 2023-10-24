@@ -25,13 +25,22 @@
         placeholder="Buscar prestador"
         required
       />
-      <BotaoPrincipal>Buscar</BotaoPrincipal>
+      <BotaoPrincipal @click="populaPrestadorStoreTemp">Buscar</BotaoPrincipal>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import BotaoPrincipal from '@/components/utils/BotaoPrincipal.vue'
+import { usePrestadorStore } from '@/stores/prestador.ts'
+
+const prestadorStore = usePrestadorStore()
+
+function populaPrestadorStoreTemp() {
+  prestadorStore.numeroContrato = '03147698'
+  prestadorStore.numeroDocumento = '26.753.292/0002-08'
+  prestadorStore.razaoSocial = 'Athena Healthcare Holding S/A'
+}
 </script>
 
 <style scoped></style>

@@ -2,8 +2,8 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import HeaderApp from '@/apps/HeaderApp.vue'
-import MainApp from '@/apps/MainApp.vue'
+import HeaderApp from '@/appsVue/HeaderApp.vue'
+import MainApp from '@/appsVue/MainApp.vue'
 
 const mainApp = createApp(MainApp)
 mainApp.use(createPinia())

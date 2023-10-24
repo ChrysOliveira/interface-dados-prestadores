@@ -12,7 +12,7 @@
         id="navbar-dropdown"
       >
         <ul class="flex flex-row space-x-8 rounded-lg px-4 font-medium md:flex-row">
-          <LinkNav>UNS</LinkNav>
+          <LinkNav href="https://srvomt101.omint.com.br/Omint.UNS/Perfil/Index">UNS</LinkNav>
           <DropdownNav menuTargetId="dropdownNavbar">Menu</DropdownNav>
           <!-- Dropdown menu -->
           <MenuDropDownNav
@@ -24,7 +24,7 @@
               { link: '#', texto: 'Listagem MediService' }
             ]"
           ></MenuDropDownNav>
-          <LinkNav>Intranet</LinkNav>
+          <LinkNav href="https://omintbr.sharepoint.com/sites/omintportal">Intranet</LinkNav>
         </ul>
         <div class="flex-column flex items-center justify-between">
           <button

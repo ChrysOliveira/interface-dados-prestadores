@@ -5,7 +5,7 @@
     >
       <ItemMenuDadosPrestador
         v-for="item in listaMenuDadosPrestador"
-        @click="MudaItemSelecionadoMenuDados(item.id)"
+        @click="MudaItemSelecionadoMenuDados(item.id), MudaAbaAtiva(item.id)"
         :key="item.id"
         :icone="item.icone"
         :habilitado="item.habilitado"
@@ -19,6 +19,9 @@
 <script setup lang="ts">
 import ItemMenuDadosPrestador from '@/components/main-conteudo/componentes-interativos/ItemMenuDadosPrestador.vue'
 import { ref } from 'vue'
+import { useAbaAtivaStore } from '@/stores/abaAtiva.ts'
+
+const abaAtivaStore = useAbaAtivaStore()
 
 const listaMenuDadosPrestador = ref([
   {
@@ -63,7 +66,7 @@ const listaMenuDadosPrestador = ref([
   }
 ])
 
-function MudaItemSelecionadoMenuDados(id) {
+function MudaItemSelecionadoMenuDados(id: number) {
   listaMenuDadosPrestador.value.forEach((item) => {
     if (item.id === id && item.selecionado === true) {
       return
@@ -73,6 +76,10 @@ function MudaItemSelecionadoMenuDados(id) {
       item.selecionado = true
     }
   })
+}
+
+function MudaAbaAtiva(aba: number): void {
+  abaAtivaStore.abaAtiva = aba
 }
 </script>
 
